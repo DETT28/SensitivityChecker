@@ -29,4 +29,8 @@ public class SensitivityConverter {
         double toMultiplier = getGameMultiplier(toGameIndex);
         return toMultiplier * (sensitivity / fromMultiplier);
     }
+
+    public static int eDPI(double sensitivity, double dpi) {
+        return (int) (sensitivity * dpi);
+    }
 }
